@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7903fcb3.chunk.css",
+    "main.js": "/static/js/main.252fd159.chunk.js",
+    "main.js.map": "/static/js/main.252fd159.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.04143a8f.js",
+    "runtime-main.js.map": "/static/js/runtime-main.04143a8f.js.map",
+    "static/css/2.d9ad5f5c.chunk.css": "/static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.147dc29e.chunk.js": "/static/js/2.147dc29e.chunk.js",
+    "static/js/2.147dc29e.chunk.js.map": "/static/js/2.147dc29e.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.48dba5ae3fcb34781e458cd6967f79de.js": "/precache-manifest.48dba5ae3fcb34781e458cd6967f79de.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.d9ad5f5c.chunk.css.map": "/static/css/2.d9ad5f5c.chunk.css.map",
+    "static/css/main.7903fcb3.chunk.css.map": "/static/css/main.7903fcb3.chunk.css.map",
+    "static/js/2.147dc29e.chunk.js.LICENSE.txt": "/static/js/2.147dc29e.chunk.js.LICENSE.txt",
+    "static/media/Logo-Blue.png": "/static/media/Logo-Blue.ad79bf8d.png",
+    "static/media/Logo.png": "/static/media/Logo.ad70c17f.png",
+    "static/media/App.css": "/static/media/construction-industry.34be4eb3.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.04143a8f.js",
+    "static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.147dc29e.chunk.js",
+    "static/css/main.7903fcb3.chunk.css",
+    "static/js/main.252fd159.chunk.js"
+  ]
+}

@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label,
+span {
+  font-weight: 500;
+}
+
+
+.App,
+#root, .auth-wrapper {
+  width: 100%;
+}
+
+.auth-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+}
+
+.auth-inner {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 450px;
+  background: #bdbdbd;
+  -webkit-box-shadow: 0px 14px 80px #22233a33;
+          box-shadow: 0px 14px 80px #22233a33;
+  border-radius: 15px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.form-group {
+  margin-top: 0;
+  margin-bottom: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.form-control {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.auth-wrapper .form-control:focus {
+  border-color: #2196f3;
+  -webkit-box-shadow: 0px 14px 80px #22233a33;
+          box-shadow: 0px 14px 80px #22233a33;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.auth-wrapper h3 {
+  text-align: center;
+  margin: 0;
+  line-height: 1;
+  padding-bottom: 20px;
+}
+
+.custom-control-label {
+  font-weight: 400;
+}
+
+@media (max-width: 320px) {
+  .logo {
+    margin-left: 30px;
+  }
+
+  .auth-wrapper {
+    width: 300px;
+    margin-right: 100px;
+    
+  }
+  .auth-inner {
+    width: 200px;
+    margin-right: 100px;
+
+   
+    
+  }
+}
