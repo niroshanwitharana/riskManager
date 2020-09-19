@@ -4,6 +4,7 @@
   "private": true,
   "proxy": "http://localhost:8080",
   "dependencies": {
+    "@babel/runtime": "^7.11.2",
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
     "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "@fortawesome/react-fontawesome": "^0.1.11",
@@ -45,6 +46,7 @@
     ]
   },
   "devDependencies": {
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "http-proxy-middleware": "^1.0.5"
   }
 }
