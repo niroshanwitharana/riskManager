@@ -25,6 +25,11 @@ app.use(cors());
 // Specify API routes
 app.use('/api', router);
 
+// Serve up static assets (usually on heroku)
+if (process.env.NODE_ENV === "production") {
+    app.use(express.static("client/build"));
+  }
+  
 // Connect to MongoDB using mongoose
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/engineerdb", {
     useNewUrlParser: true,
@@ -32,7 +37,6 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/engineerdb", {
 }, () => {
     console.log('successfully connected to database');
 }); 
-mongoose.set('useCreateIndex', true);
 
 // Start the express server
 app.listen(PORT, () => {
