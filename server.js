@@ -39,6 +39,6 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/engineerdb", {
 }); 
 
 // Start the express server
-app.listen(PORT, () => {
+app.io.listen(PORT, () => {
     console.log(`App running on port ${PORT}!`);
 });

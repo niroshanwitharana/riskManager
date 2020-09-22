@@ -1,11 +1,11 @@
 import { config } from "../config";
-import axios from "axios";
+
 // Fetch requests for backend end-points
 export default {
 
     getAllUser : async () => {
         try {
-            const res = await axios(`/api/user`)
+            const res = await fetch(`/api/user`)
             return res.json();
         }
         catch (err) {
