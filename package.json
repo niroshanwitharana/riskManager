@@ -21,10 +21,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/meeday/engineer-app.git"
+    "url": "git+https://github.com/niroshanwitharana/riskManager.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/niroshanwitharana/riskManager/issues"
+  },
   "dependencies": {
     "bcrypt": "^5.0.0",
     "cookie-parser": "^1.4.5",
