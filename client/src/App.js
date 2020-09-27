@@ -9,6 +9,9 @@ import Project from "./components/pages/Project/Project";
 import NewRisk from "./components/pages/NewRisk/NewRisk";
 import ExistingRisk from "./components/pages/ExistingRisk/ExistingRisk";
 import AccountDashboard from "./components/pages/AccountDashboard/AccountDashboard";
+import PrivateRoute from "./hocs/PrivateRoute";
+// import UnPrivateRoute from "./hocs/UnPrivateRoute";
+
 import "./App.css";
 
 function App(props) {
@@ -28,12 +31,12 @@ function App(props) {
               </UserForm>
             )}
           />                  
-            <Route exact path="/" component={Home} />
-            <Route exact path="/new-project" component={NewProject} />
-            <Route exact path="/project/:projectId" component={Project} />
-            <Route exact path="/project/:projectId/new-risk" component={NewRisk} />
-            <Route exact path="/project/:projectId/risk/:riskId" component={ExistingRisk} />
-            <Route exact path="/account" component={AccountDashboard} />
+            <PrivateRoute exact path="/" component={Home} />
+            <PrivateRoute exact path="/new-project" component={NewProject} />
+            <PrivateRoute exact path="/project/:projectId" component={Project} />
+            <PrivateRoute exact path="/project/:projectId/new-risk" component={NewRisk} />
+            <PrivateRoute exact path="/project/:projectId/risk/:riskId" component={ExistingRisk} />
+            <PrivateRoute exact path="/account" component={AccountDashboard} />
         </Switch>
       </Router>
     </div>

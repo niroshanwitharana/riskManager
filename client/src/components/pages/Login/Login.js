@@ -24,6 +24,7 @@ export default function Login() {
       const { isAuthenticated, user } = data;
       const { firstName, lastName, _id, email, project } = data.user;
       if (isAuthenticated) {
+        userContext.setIsAuthenticated(true)
         userContext.setUserId(_id);
         userContext.setUserFName(firstName);
         userContext.setUserLName(lastName);

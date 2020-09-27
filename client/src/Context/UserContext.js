@@ -8,6 +8,7 @@ export const UserContext = createContext();
 // pull out children, obAuthProviderject destructuring props
 export default ({ children }) => {
   // the data we want to pass to the context using useState method.
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [userId, setUserId] = useState(null);
   const [userFName, setUserFName] = useState(null);
   const [userLName, setUserLName] = useState(null);
@@ -22,6 +23,8 @@ export default ({ children }) => {
       {/* set the data what we going to use in the contextApi, inside the provider's value property if browser is loaded. */}
       <UserContext.Provider
         value={{
+          isAuthenticated,
+          setIsAuthenticated,
           userId,
           setUserId,
           userFName,
